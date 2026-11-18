@@ -12,7 +12,7 @@ def calcular_tarifas(ano):
     tarifas_2024 = {
         "tarifa_scee": 0.58982364,
         "tarifa_gd": 0.515534,
-        "tarifa_fio_b": 0.85880364,
+        "tarifa_fio_b": 0.95880364,
         "tarifa_disponibilidade": 1.08060412
     }
 
