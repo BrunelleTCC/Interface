@@ -620,22 +620,22 @@ if st.button("Calcular"):
     )
 
     # ======================================================
-# VISUALIZAÇÃO TEMPORÁRIA DAS TARIFAS
-# ======================================================
-
-st.subheader("Tarifas utilizadas no cálculo")
-
-for ano in range(2024, 2029):
-
-    tarifas = calcular_tarifas(ano)
-
-    st.write(
-        f"**{ano}:** "
-        f"SCEE = R$ {tarifas['tarifa_scee']:.8f}/kWh | "
-        f"GD = R$ {tarifas['tarifa_gd']:.8f}/kWh | "
-        f"Fio B = R$ {tarifas['tarifa_fio_b']:.8f}/kWh | "
-        f"Disponibilidade = R$ {tarifas['tarifa_disponibilidade']:.8f}/kWh"
-    )
+    # VISUALIZAÇÃO TEMPORÁRIA DAS TARIFAS
+    # ======================================================
+    
+    st.subheader("Tarifas utilizadas no cálculo")
+    
+    for ano in range(2024, 2029):
+    
+        tarifas = calcular_tarifas(ano)
+    
+        st.write(
+            f"**{ano}:** "
+            f"SCEE = R$ {tarifas['tarifa_scee']:.8f}/kWh | "
+            f"GD = R$ {tarifas['tarifa_gd']:.8f}/kWh | "
+            f"Fio B = R$ {tarifas['tarifa_fio_b']:.8f}/kWh | "
+            f"Disponibilidade = R$ {tarifas['tarifa_disponibilidade']:.8f}/kWh"
+        )
     # ======================================================
     # INTERPRETAÇÃO AUTOMÁTICA
     # ======================================================
