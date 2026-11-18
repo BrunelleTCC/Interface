@@ -208,10 +208,9 @@ def calcular_gd1(
     # Verifica a diferença entre energia injetada
     # e consumo do ciclo
     saldo_antes = (
-        - saldo_credito_kwh
-        - injetado_kwh
-        + consumo_kwh
-        - custo_disponibilidade_kwh
+        saldo_credito_kwh
+        + injetado_kwh
+        - (consumo_kwh - custo_disponibilidade_kwh)
     )
 
     # Se houver excedente, ele é acumulado.
