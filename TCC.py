@@ -216,7 +216,7 @@ def calcular_gd1(
     # Se houver excedente, ele é acumulado.
     # Se o consumo superar os créditos disponíveis,
     # o saldo fica zerado.
-    credito = min(0, saldo_antes)
+    credito = max(0, saldo_antes)
 
     # Quantidade de energia que não pôde ser
     # compensada com os créditos disponíveis
