@@ -211,7 +211,7 @@ def calcular_gd1(
         saldo_credito_kwh
         + injetado_kwh
         - consumo_kwh
-        - custo_disponibilidade_kwh
+        + custo_disponibilidade_kwh
     )
 
     # Se houver excedente, ele é acumulado.
